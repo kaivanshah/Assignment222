@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kaivanshah.assignment22.MainActivity"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:orientation="vertical" android:background="@color/black">
+    <LinearLayout android:layout_weight="1" android:paddingTop="10dp" android:paddingBottom="10dp" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:textColor="@color/white" android:layout_weight="1.5" android:text="@string/Card_Balance" />
+        <EditText
+            android:layout_width="match_parent" android:layout_weight="2"  android:background="@color/white"
+            android:layout_height="wrap_content" android:id="@+id/txt_CardBalance" />
+    </LinearLayout>
+    <LinearLayout android:layout_weight="1" android:paddingBottom="10dp" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textColor="@color/white" android:layout_weight="1.5" android:text="@string/Card_InterestRate" />
+        <EditText
+            android:layout_width="match_parent" android:layout_weight="2"  android:background="@color/white"
+            android:layout_height="wrap_content" android:id="@+id/txt_InterestRate" />
+
+    </LinearLayout>
+    <LinearLayout android:layout_weight="1" android:paddingBottom="10dp" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent" android:textColor="@color/white"
+            android:layout_height="wrap_content" android:layout_weight="1.5" android:text="@string/Card_MinPayment" />
+        <EditText
+            android:layout_width="match_parent" android:layout_weight="2"
+            android:layout_height="wrap_content" android:id="@+id/txt_MinPayment" android:background="@color/white" />
+    </LinearLayout>
+    <LinearLayout android:layout_weight="1" android:paddingBottom="10dp" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent" android:textColor="@color/white"
+            android:layout_height="wrap_content" android:layout_weight="1.5" android:text="@string/Card_FinBalance" />
+        <EditText android:background="@color/white" android:paddingRight="50dp"
+            android:layout_width="match_parent" android:layout_weight="2"
+            android:layout_height="wrap_content" android:id="@+id/txt_FinBalance" />
+    </LinearLayout>
+    <LinearLayout android:layout_weight="1" android:paddingBottom="10dp" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent" android:textColor="@color/white"
+            android:layout_height="wrap_content" android:layout_weight="1.5" android:text="@string/Card_Month_Remaining" />
+        <EditText
+            android:layout_width="match_parent" android:layout_weight="2"  android:background="@color/white"
+            android:layout_height="wrap_content" android:id="@+id/txt_Month_Remaining" />
+    </LinearLayout>
+    <LinearLayout android:layout_weight="1"  android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent" android:textColor="@color/white"
+            android:layout_height="wrap_content" android:layout_weight="1.5" android:text="@string/Card_Interest" />
+        <EditText
+            android:layout_width="match_parent" android:layout_weight="2" android:background="@color/white"
+            android:layout_height="wrap_content" android:id="@+id/txt_Card_Interest" />
+    </LinearLayout>
+    <Button android:layout_weight="1" android:layout_marginBottom="10dp"
+        android:layout_width="match_parent" android:background="@color/white"
+        android:layout_height="match_parent" android:text="@string/Compute"/>
+    <Button android:layout_weight="1" android:layout_marginTop="10dp" android:layout_marginBottom="5dp" android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:text="@string/Clear" />
+</LinearLayout>
